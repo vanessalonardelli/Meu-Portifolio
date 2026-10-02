@@ -2,79 +2,93 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Vanessa Lonardelli</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <h1>Vanessa Lonardelli</h1>
-    <p>Estudante do 4º período de Análise e Desenvolvimento de Sistemas.</p>
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre Mim</a></li>
-            <li><a href="#formacao">Formação</a></li>
-            <li><a href="#conhecimentos">Conhecimentos</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+<header class="topo">
+    <div class="container topo__conteudo">
+        <div class="topo__texto">
+            <h1>Vanessa Lonardelli</h1>
+            <p>Estudante do 4º período de Análise e Desenvolvimento de Sistemas.</p>
+        </div>
+        <nav class="menu" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#conhecimentos">Conhecimentos</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<main>
+<main class="container">
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <img src="eu.jpg.jpg" alt="Foto de perfil de Vanessa Lonardelli" width="200">
-        <p>
-            Estudante do 4º período de Análise e Desenvolvimento de Sistemas. Estou construindo minha trajetória na área de tecnologia.<br> 
-            Tenho interesse em desenvolvimento web, criação de interfaces, programação, banco de dados e análise de sistemas.<br>
-            Durante a graduação, venho tendo contato com tecnologias como HTML, Java, Python e SQL, buscando entender <br>diferentes áreas e descobrir aquelas com as quais mais me identifico.
-        </p>
+    <section id="sobre" class="cartao sobre">
+        <img class="sobre__foto" src="eu.jpg.jpg" alt="Foto de perfil de Vanessa Lonardelli">
+        <div class="sobre__texto">
+            <h2>Sobre Mim</h2>
+            <p>Estudante do 4º período de Análise e Desenvolvimento de Sistemas. Estou construindo minha trajetória na área de tecnologia.</p>
+            <p>Tenho interesse em desenvolvimento web, criação de interfaces, programação, banco de dados e análise de sistemas.</p>
+            <p>Durante a graduação, venho tendo contato com tecnologias como HTML, Java, Python e SQL, buscando entender diferentes áreas e descobrir aquelas com as quais mais me identifico.</p>
+        </div>
     </section>
 
-    <section id="formacao">
+    <section id="formacao" class="cartao">
         <h2>Formação</h2>
-        <ul>
+        <ul class="lista-formacao">
             <li>
-                <strong>Ensino Médio</strong> - EEEFM Dylio Penedo (Concluído em 2018)
+                <strong>Ensino Médio</strong>
+                <span>EEEFM Dylio Penedo (Concluído em 2018)</span>
             </li>
             <li>
-                <strong>Análise e Desenvolvimento de Sistemas</strong> - FAESA (Cursando)
+                <strong>Análise e Desenvolvimento de Sistemas</strong>
+                <span>FAESA (Cursando)</span>
             </li>
         </ul>
     </section>
 
-    <section id="conhecimentos">
+    <section id="conhecimentos" class="cartao">
         <h2>Conhecimentos</h2>
-        <ul>
+        <ul class="tags">
             <li>Java</li>
             <li>Python</li>
-            <li>SalesForce CRM</li>
+            <li>Salesforce CRM</li>
             <li>HTML</li>
+            <li>CSS</li>
             <li>SQL</li>
         </ul>
     </section>
 
-    <section id="projetos">
+    <section id="projetos" class="cartao">
         <h2>Projetos</h2>
-        <ul>
-            <li>
-                <strong>Portfólio Pessoal em HTML:</strong> Desenvolvido como projeto prático para a disciplina de desenvolvimento de aplicações web I.
-            </li>
-            <li>
-                <strong>Aplicativo de saúde - Nutricore:</strong> Em desenvolvimento como projeto pessoal e projeto integrador.
-            </li>
-        </ul>
+        <div class="projetos">
+            <article class="projeto">
+                <h3>Portfólio Pessoal</h3>
+                <p>Desenvolvido como projeto prático para a disciplina de Desenvolvimento de Aplicações Web I.</p>
+            </article>
+            <article class="projeto">
+                <h3>Nutricore</h3>
+                <p>Aplicativo de saúde em desenvolvimento como projeto pessoal e projeto integrador.</p>
+            </article>
+        </div>
     </section>
 
 </main>
 
-<footer id="contato">
-    <h2>Contato</h2>
-    <ul>
-        <li>E-mail: <a href="mailto:vanessalonardelli.dev@gmail.com">vanessalonardelli.dev@gmail.com</a></li>
-        <li>GitHub: <a href="https://github.com/vanessalonardelli" target="_blank">vanessalonardelli</a></li>
-    </ul>
+<footer id="contato" class="rodape">
+    <div class="container">
+        <h2>Contato</h2>
+        <ul class="contatos">
+            <li>E-mail: <a href="mailto:vanessalonardelli.dev@gmail.com">vanessalonardelli.dev@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/vanessalonardelli" target="_blank" rel="noopener">vanessalonardelli</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener">Acesse meu LinkedIn</a></li>
+        </ul>
+    </div>
 </footer>
 
 </body>
