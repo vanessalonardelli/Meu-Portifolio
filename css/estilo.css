@@ -51,22 +51,23 @@ h1, h2, h3 {
 .topo {
     background-color: var(--tinta);
     color: #ffffff;
-    padding: 32px 0;
+    padding: 32px 0 20px;
+    text-align: center;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--tinta);
     border-bottom: 6px solid var(--destaque);
+    padding: 12px 0;
 }
 
 .topo h1 {
     color: #ffffff;
     font-size: 2.2rem;
     margin-bottom: 8px;
-}
-
-.topo__conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 24px;
 }
 
 .menu ul {
@@ -103,7 +104,7 @@ main {
     border: 1px solid var(--borda);
     border-radius: var(--raio);
     margin-bottom: 24px;
-    scroll-margin-top: 16px;
+    scroll-margin-top: 100px;
 }
 
 .cartao h2 {
@@ -164,12 +165,12 @@ main {
 
 .projetos {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 16px;
 }
 
 .projeto {
-    flex: 1;
+    flex: 1 1 280px;
     padding: 20px;
     border: 1px solid var(--borda);
     border-top: 4px solid var(--destaque);
@@ -198,4 +199,49 @@ main {
 
 .rodape a {
     color: var(--destaque-claro);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--destaque);
+    outline-offset: 3px;
+}
+
+.menu a:focus-visible,
+.rodape a:focus-visible {
+    outline-color: #ffffff;
+}
+
+.contatos li {
+    overflow-wrap: anywhere;
+}
+@media (min-width: 640px) {
+    .sobre {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 900px) {
+    .cartao {
+        padding: 36px;
+    }
+}
+
+@media (max-width: 400px) {
+    .topo h1 {
+        font-size: 1.8rem;
+    }
+
+    .cartao {
+        padding: 20px;
+    }
+
+    .menu a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
 }
