@@ -276,3 +276,27 @@ a:focus-visible {
     outline: 3px solid #ffffff;
     outline-offset: 3px;
 }
+
+body.tema-escuro {
+    --fundo: #0f1226;
+    --superficie: #1a1f3d;
+    --tinta: #0b0e20;
+    --texto: #c9cde6;
+    --destaque: #6c60e8;
+    --destaque-claro: #2a2f5c;
+    --borda: #2f3564;
+}
+
+body.tema-escuro .rodape a {
+    color: #ffffff;
+}
+
+body.tema-escuro .cartao h2,
+body.tema-escuro .projeto h3,
+body.tema-escuro .lista-formacao strong {
+    color: #ffffff;
+}
+
+body.tema-escuro .tags li {
+    color: #d4d0ff;
+}
